@@ -45,6 +45,14 @@ pipeline {
                         """
                     }
                 }
+                stage('Test File 2') {
+                    steps {
+                        sh """
+                        . ${VENV_DIR}/bin/activate
+                        python -m pytest test_app2.py -v
+                        """
+                    }
+                }
             }
         }
 
