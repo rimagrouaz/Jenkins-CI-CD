@@ -76,7 +76,7 @@ pipeline {
     post {
         success {
             emailext(
-                to: "EMAIL_TO_PLACEHOLDER",
+                to: "rim.agrouaz15@gmail.com",
                 from: "EMAIL_FROM_PLACEHOLDER",
                 replyTo: "EMAIL_REPLY_PLACEHOLDER",
                 subject: "✅ SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
@@ -91,7 +91,7 @@ pipeline {
     
         failure {
             emailext(
-                to: "EMAIL_TO_PLACEHOLDER",
+                to: "rim.agrouaz15@gmail.com",
                 from: "EMAIL_FROM_PLACEHOLDER",
                 replyTo: "EMAIL_REPLY_PLACEHOLDER",
                 subject: "❌ FAILURE: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
